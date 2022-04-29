@@ -78,18 +78,8 @@ export default defineConfig({
 
   server: {
     proxy: {
-      '^/twirp/.*': {
-        target: proxyDist.manga,
-        changeOrigin: true,
-        secure: false
-      },
-      '^/herald/.*': {
-        target: proxyDist.mng,
-        changeOrigin: true,
-        secure: false
-      },
-      '^/glados/.*': {
-        target: proxyDist.mng,
+      '^/api/.*': {
+        target: proxyDist,
         changeOrigin: true,
         secure: false
       }
