@@ -2,7 +2,7 @@
 
 > Create at esahime_create_date.
 
-My awesome Vue 3 project.
+esahime_description
 
 ## Quick Start
 
