@@ -1,7 +1,7 @@
 import legacy from '@vitejs/plugin-legacy'
 import vue from '@vitejs/plugin-vue'
-import vueJsx from '@vitejs/plugin-vue-jsx'
 import dayjs from 'dayjs'
+import swc from 'unplugin-swc'
 import { defineConfig } from 'vite'
 import eslintPlugin from 'vite-plugin-eslint'
 import svgLoader from 'vite-svg-loader'
@@ -44,14 +44,8 @@ export default defineConfig({
     : '/',
 
   plugins: [
+    swc.vite(),
     vue(),
-    vueJsx({
-      babelPlugins: [
-        'babel-plugin-transform-typescript-metadata',
-        ['@babel/plugin-proposal-decorators', { legacy: true }],
-        ['@babel/plugin-proposal-class-properties', { loose: true }]
-      ]
-    }),
     eslintPlugin({
       cache: false
     }),
