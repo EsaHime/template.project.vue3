@@ -4,8 +4,8 @@
   "description": "esahime_description",
   "private": true,
   "scripts": {
-    "dev": "cross-env NODE_ENV=development vite",
-    "build": "vue-tsc --noEmit && cross-env NODE_ENV=production vite build",
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview"
   },
   "dependencies": {
@@ -24,7 +24,7 @@
     "@vitejs/plugin-legacy": "^6.1.1",
     "@vitejs/plugin-vue": "^5.2.4",
     "@vue/compiler-sfc": "^3.2.20",
-    "cross-env": "^7.0.3",
+    "dotenv": "^16.5.0",
     "stylus": "^0.64.0",
     "swc-plugin-vue-jsx": "^0.4.0",
     "terser": "^5.39.2",
