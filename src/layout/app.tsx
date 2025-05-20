@@ -23,18 +23,18 @@ const AppLayout = defineComponent({
         <form onSubmit={onSubmit}>
           <div>
             <div>Username: {username.value}</div>
-            <input v-model={username} type='text' />
+            <input v-model={username.value} type='text' />
           </div>
 
           <div>
             <div>Gender: {gender.value}</div>
             <label>
-              <input v-model={gender} type='radio' value='male' />
+              <input v-model={gender.value} type='radio' value='male' />
               <span>Male</span>
             </label>
 
             <label>
-              <input v-model={gender} type='radio' value='female' />
+              <input v-model={gender.value} type='radio' value='female' />
               <span>Female</span>
             </label>
           </div>

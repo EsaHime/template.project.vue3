@@ -1,10 +1,20 @@
 {
+  "isModule": true,
   "jsc": {
+    "target": "es2020",
+    "parser": {
+      "syntax": "typescript",
+      "tsx": true,
+      "decorators": true
+    },
     "transform": {
-      "react": {
-        "runtime": "automatic",
-        "importSource": "vue-jsx-runtime"
-      }
+      "legacyDecorator": true,
+      "decoratorMetadata": true
+    },
+    "experimental": {
+      "plugins": [
+        ["swc-plugin-vue-jsx", {}]
+      ]
     }
   }
 }

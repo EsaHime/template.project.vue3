@@ -3,10 +3,10 @@ import { JsonProperty, Serializable, deserialize } from '@lancercomet/suntori'
 @Serializable()
 class User {
   @JsonProperty('name')
-  username: string = ''
+    username: string = ''
 
   @JsonProperty()
-  gender: 'male' | 'female' = 'male'
+    gender: 'male' | 'female' = 'male'
 }
 
 const createUser = (dataSource: unknown) => {
